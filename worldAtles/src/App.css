@@ -13,7 +13,7 @@ html {
 
 body{
 
-  background-color: rgb(246, 79, 79);
+  background-color: rgb(16, 16, 16);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -32,7 +32,7 @@ li {
 }
 
 a{
-  color: black;
+  color: rgb(255, 254, 254);
 
   &:hover {
     color: rgb(70, 124, 217);

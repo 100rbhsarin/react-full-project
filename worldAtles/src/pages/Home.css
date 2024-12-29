@@ -1,0 +1,90 @@
+
+
+.hero-section {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 40vh; /* Occupy 40% of the screen height */
+    padding: 0 20px;
+    background-color: #1b1d1e; /* Light background for the section */
+    position: relative; /* For positioning the airplane animation */
+    overflow: hidden; /* Ensure airplane stays within bounds */
+}
+
+.left-section {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-field {
+    max-width: 90%;
+}
+
+.heading-one {
+    font-size: 2.5rem;
+    color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 1.1rem;
+    color: #fcfcfc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.home-main-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-main-button:hover {
+    background-color: #0056b3;
+}
+
+.home-main-button svg {
+    margin-left: 10px; /* Space between text and icon */
+}
+
+.hero-img {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.globe-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Airplane animation */
+.airplane {
+    position: absolute;
+    top: 10%;
+    left: -10%; /* Start off-screen */
+    font-size: 5rem;
+    color: #ece94a;
+    animation: moveAirplane 6s linear infinite;
+}
+
+@keyframes moveAirplane {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 110%; /* Move off the right side */
+    }
+}
