@@ -1,0 +1,61 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #1a1a1a; /* Dark gray card background */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 0 15px 4px #007bff; /* Glowing blue shadow */
+    border-color: #007bff; /* Glowing blue border */
+}
+
+.containers {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #212121; /* Slightly darker container */
+    box-shadow: 0 0 4px 2px #e1f949; /* Glowing blue shadow */
+}
+
+.bg-primary {
+    background-color: #27282a; /* Blue background for primary sections */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-discription {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ccc; /* Light gray for descriptions */
+}
+
+.Intrsring-Fact {
+    font-style: italic;
+    color: #ff9800; /* Orange for an interesting fact */
+}
+
+p {
+    margin: 10px 0;
+}
