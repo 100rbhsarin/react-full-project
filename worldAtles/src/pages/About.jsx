@@ -1,5 +1,6 @@
 import countryInfo from '../api/countryfact.json'
 import "./About.css"
+
 export const About = ()=>{
 
     return(

@@ -1,0 +1,84 @@
+/* General Form Styling */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2a2929;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(236, 236, 239, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 2px solid #f5f1f1;
+    border-radius: 5px;
+    background: #353535;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 8px rgba(98, 0, 234, 0.8);
+    background: #787878;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #6200ea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #5300d2;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.8);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.8);
+  }
+  
+  /* Placeholder styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Form responsiveness */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

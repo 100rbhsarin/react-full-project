@@ -3,23 +3,36 @@
     flex-wrap: wrap;
     gap: 20px; /* Space between cards */
     padding: 20px;
+    justify-content: center;
+
+}
+
+.container-title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 40px;
+  color: #f2f2f2;
 }
 
 .card {
     background-color: #1a1a1a; /* Dark gray card background */
-    border-radius: 8px;
+    border-radius: 14px;
     padding: 20px;
     width: 300px;
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     position: relative;
     
 }
 
 .card:hover {
     transform: scale(1.05); /* Slight scaling on hover */
-    box-shadow: 0 0 15px 4px #007bff; /* Glowing blue shadow */
+    box-shadow: 0 0 8px 4px #007bff; /* Glowing blue shadow */
     border-color: #007bff; /* Glowing blue border */
 }
 
@@ -27,7 +40,7 @@
     padding: 15px;
     border-radius: 8px;
     background-color: #212121; /* Slightly darker container */
-    box-shadow: 0 0 4px 2px #e1f949; /* Glowing blue shadow */
+    box-shadow: 0 0 2px 1px #e1f949; /* Glowing blue shadow */
 }
 
 .bg-primary {
