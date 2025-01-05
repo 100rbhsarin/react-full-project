@@ -2,11 +2,11 @@
 .country-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* Individual card style */
@@ -28,9 +28,10 @@
 .country-card img {
     width: 100%;
     height: auto;
-    border-bottom: 3px solid #454444;
-    padding: 4px;
-    border-radius: 14px;
+    border-bottom: 3px solid #100f0f;
+    padding: 30px;
+    border-radius: 40px;
+
 }
 
 /* Card details container */

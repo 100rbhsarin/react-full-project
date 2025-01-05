@@ -1,0 +1,116 @@
+/* Container with Glowing Border */
+.country-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #131212;
+    border-radius: 10px;
+    box-shadow: 3px 7px 12px rgba(98, 237, 11);
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    background-origin: border-box;
+    margin: 12px;
+  }
+  
+  .country-details-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff7b54, #ffca3a, #8ac926, #1982c4, #6a4c93);
+    z-index: -1;
+    animation: glowing-border 3s infinite;
+  }
+  
+  /* Glowing Border Animation */
+  @keyframes glowing-border {
+    0% {
+      filter: blur(10px);
+      opacity: 1;
+    }
+    50% {
+      filter: blur(20px);
+      opacity: 0.6;
+    }
+    100% {
+      filter: blur(10px);
+      opacity: 1;
+    }
+  }
+  
+  /* Flag and Details Content */
+  .country-details-content {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem; /* Increased gap between flag and info */
+    padding: 2rem;
+  }
+  
+  /* Flag Section */
+  .country-details-flag {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flag-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Details Section */
+  .country-details-info {
+    flex: 2;
+    margin-left: 2rem; /* Moves the info section farther to the right */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .country-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Back Button */
+  .back-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .back-button button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button button:hover {
+    background-color: #0056b3;
+  }
+  
