@@ -40,7 +40,7 @@
     padding: 15px;
     border-radius: 8px;
     background-color: #212121; /* Slightly darker container */
-    box-shadow: 0 0 2px 1px #e1f949; /* Glowing blue shadow */
+    box-shadow: 0 0 2px 1px #f9f9f7; /* Glowing blue shadow */
 }
 
 .bg-primary {
