@@ -13,7 +13,8 @@
     border: 1px solid transparent;
     background-clip: padding-box;
     background-origin: border-box;
-    margin: 12px;
+    margin: 34px;
+   margin-left: 35px;
   }
   
   .country-details-wrapper::after {

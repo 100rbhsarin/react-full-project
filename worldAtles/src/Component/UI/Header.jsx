@@ -1,18 +1,24 @@
 import { NavLink } from "react-router-dom"
+import { LuMenu } from "react-icons/lu";
 import './Header.css'
+import { useState } from "react";
 
 export const Header = ()=>{
+const [show, setShow] = useState(false)
 
+   const handleButtonToggle = ()=>{
+return setShow(!show)
+   }
     return(
         <>
-    <div className="container">
+    <div className="header-container">
         <div className="grid navebar-grid grid-two-cols">
             <div className="logo">
                 <NavLink to= '/'>
-                <h1>WORLD  INFO</h1>
+                <p>WORLD  INFO</p>
                 </NavLink>
                 </div>
-                <nav className="nav">
+                <nav className = { show ? "menu-mobile" : "menu-web" }>
                     <ul>
                         <li>
                             <NavLink to="/">Home</NavLink>
@@ -28,7 +34,11 @@ export const Header = ()=>{
                         </li>
                     </ul>
                 </nav>
-
+<div className="ham-menu">
+<button onClick={handleButtonToggle}>
+<LuMenu />
+</button>
+</div>
            
         </div>
     </div>

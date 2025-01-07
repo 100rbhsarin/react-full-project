@@ -1,72 +1,108 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    /* padding: 0 15px; */
-    background-color: rgb(44, 42, 42);
-    border-radius: 16px;
-    margin-top: 12px;
-    padding: 10px;
-    margin: auto;
-    box-shadow: #efeaea;
+.header-container {
+    background-color: #282c34; /* Dark background for header */
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-.grid{
+/* Grid Layout */
+.grid {
     display: grid;
+    align-items: center;
 }
-
-
 
 .navebar-grid {
-    
+    grid-template-columns: 1fr auto; /* Logo on the left, menu on the right */
+}
+
+/* Logo Styling */
+.logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #61dafb; /* React Blue */
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Navigation Menu (Desktop) */
+.menu-web {
+    display: flex;
+    gap: 20px;
+}
+.menu-web ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
+    gap: 20px;
 }
-
-
-
-.logo {
-    flex: 1;
-  /* background-color:darkgoldenrod */
-}
-
-.logo h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #efeaea;
-    margin: 0;
+.menu-web li a {
     text-decoration: none;
-}
-
-.nav {
-    flex: 2;
-    text-align: right;
-    font-weight: 500;
-    /* background-color: rgb(101, 119, 101); */
-}
-
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav ul li {
-    margin-left: 20px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #f9f7f7;
+    color: white;
+    font-size: 1rem;
     transition: color 0.3s;
-    font-weight: bold;
+}
+.menu-web li a:hover {
+    color: #61dafb;
 }
 
-.nav ul li a:hover {
-    color: #ef1515;
-    font-weight: bold;
+/* Mobile Menu */
+.menu-mobile {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px; /* Place it below the header */
+    right: 20px;
+    background-color: #282c34;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-mobile li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.menu-mobile li a:hover {
+    color: #61dafb;
+}
+
+/* Hamburger Menu Button */
+.ham-menu {
+    display: none; /* Hidden on desktop */
+}
+
+.ham-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ham-menu button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-web {
+        display: none; /* Hide the desktop menu */
+    }
+
+    .menu-mobile {
+        display: flex; /* Show the mobile menu */
+    }
+
+    .ham-menu {
+        display: block; /* Show the hamburger menu button */
+    }
 }
